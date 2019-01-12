@@ -1,0 +1,713 @@
+#nav-container {
+	display: inline-block;
+	border-bottom: 1px solid lightgray;
+	margin-top: 0px;
+	position: relative;
+	top: 0px;
+	padding: none;
+}
+
+body {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+#nav-container li {
+	display: inline-block;
+}
+
+#nav-container li a {
+	text-decoration: none;
+	color: gray;
+	padding: 5px;
+}
+
+header {
+	margin: 0;
+	padding: 0;
+}
+
+#indeed-logo-span {
+	color: blue;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#nav-container {
+	margin: 0;
+	padding: 0;
+}
+
+#email-li {
+	margin-left: 70%;
+}
+
+#grid-container-1 {
+	display: grid;
+	grid-template-columns: 40% 40% 20%;
+	grid-column-gap: 2px;
+	margin-right: 8%;
+	margin-left: 15%;
+	margin-top: 5%;
+	width: 70%;
+}
+
+.grid-item {
+	margin-left: 20px;
+}
+
+.textbox {
+	width: 100%;
+	height: 35px;
+}
+
+#find-jobs-btn {
+	background-color: blue;
+	color: white;
+	margin-top: 70px;
+	width: 100px;
+	height: 40px;
+}
+
+#grid-container-2 {
+	display: grid;
+	grid-template-columns: 50% 22.5% 22.5% 5%;
+	margin-right: 15%;
+	margin-left: 10%;
+	margin-top: 30px;
+	border-top: 2px solid red;
+	border-left: 0.5px lightgray solid;
+	border-right: 0.5px lightgray solid;
+	border-bottom: 0.5px lightgray solid;
+	height: 80px;
+	margin-bottom: 20px;
+	width: 70%;
+}
+
+#find-jobs-btn {
+	border-radius: 30px;
+	width: 130px;
+	height: 45px;
+}
+
+#learn-more-span {
+	color: blue;
+}
+
+#post-job-btn {
+	color: blue;
+	width: 210px;
+	height: 35px;
+	border-radius: 30px;
+	background-color: #f6f6f6;
+	margin-top: 20px;
+}
+
+#search-resumes-btn {
+	color: blue;
+	background-color: #f6f6f6;
+	border-radius: 30%;
+	width: 210px;
+	height: 35px;
+	margin-top: 20px;
+}
+
+#x-span {
+	position: relative;
+	top: 25px;
+}
+
+#container-3 {
+	width: 90%;
+	margin-left: 8%;
+}
+
+#grid-container-3 {
+	display: grid;
+	grid-template-columns: 10% 70% 10% 10%;
+}
+
+#container-3-wrapper {
+	margin-right: 5%;
+	margin-left: 5%;
+	border-top: 2px solid red;
+	background-color: #f6f6f6;
+	width: 80%;
+	height: 160px;
+}
+
+/* New messages div */
+
+#grid-container-3 {
+	background-color: white;
+	padding: 10px;
+}
+
+#new-message-h2 {
+	margin-left: 15px;
+}
+
+#new-message-count {
+	color: red;
+}
+
+#new-message-date {
+	color: red;
+	margin-left: 40%;
+}
+
+#reply-btn {
+	color: blue;
+	width: 100px;
+	height: 35px;
+	width: 120px;
+	border-radius: 25%;
+	border: 2px solid lightgray;
+}
+
+/* Recent Searches div */
+
+#grid-container-4 {
+	display: grid;
+	grid-template-columns: 90% 10%;
+	margin-left: 8%;
+	margin-right: 8%;
+	margin-top: 40px;
+	width: 70%;
+}
+
+#clear-btn {
+	height: 30px;
+	width: 60px;
+	border-radius: 40%;
+	background-color: #f6f6f6;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#recent-searches-span {
+	font-size: 24px;
+}
+
+#recent-searches-list-div {
+	margin-left: 7%;
+	margin-right: 10%;
+	background-color: #f6f6f6;
+	width: 75%;
+}
+
+#recent-searches-list-div a {
+	text-decoration: none;
+}
+
+#recent-searches-list-div li {
+	list-style: none;
+	height: 50px;
+	border: solid 1px white;
+	padding: 10px;
+}
+
+.recent-searches-new-count {
+	color: red;
+}
+
+#saved-jobs-div {
+	margin-left: 7%;
+	margin-right: 15%;
+	margin-top: 50px;
+	width: 90%;
+}
+
+#saved-jobs-list {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-gap: 1em;
+	width: 80%;
+}
+
+.saved-job-card {
+	border: 1px solid lightgray;
+	padding: 10px;
+}
+
+#recently-viewed-p {
+	font-size: 24px;
+}
+
+#recently-viewed-conatiner {
+	margin-left: 7%;
+	margin-right: 8%;
+	margin-top: 50px;
+}
+
+#recently-viewed-list {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-gap: 1em;
+	width: 85%;
+}
+
+.recently-viewed-card {
+	border: 1px solid lightgray;
+	padding: 10px;
+}
+
+#recommended-jobs-container {
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 75%;
+}
+
+#recommended-jobs-p {
+	font-size: 24px;
+	margin-left: 3%;
+}
+
+#recommended-jobs-list {
+	display: grid;
+	grid-template-columns: 1% 25% 25% 24% 24% 1%;
+	grid-gap: 1em;
+}
+
+.recommended-job-card {
+	border: 1px solid lightgray;
+	padding: 10px;
+}
+
+#browse-job-categories-container {
+	margin-left: 5%;
+	margin-right: 9%;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	width: 75%;
+}
+
+#browse-job-categories-container h2 {
+	margin-left: 2%;
+}
+
+#browse-job-categories-list {
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-gap: 1em;
+	margin-left: 2%;
+}
+
+.browse-job-categories-card {
+	border: 1px solid lightgray;
+	padding: 15px;
+}
+
+.browse-job-categories-card a {
+	text-decoration: none;
+	color: black;
+}
+
+#footer-div {
+	width: 100%;
+	margin-top: 100px;
+	border-top: 5px solid red;
+}
+
+#footer-p {
+	text-align: center;
+}
+
+#footer-p-spanish {
+	text-align: center;
+}
+
+#million-stories-span {
+	color: blue;
+}
+
+#espanol-span {
+	color: blue;
+}
+
+#footer-nav-div {
+	display: inline-block;
+}
+
+#copy-right-div {
+	display: inline-block;
+}
+
+.heart-right {
+	margin-left: 100px;
+}
+
+#footer-nav-and-copy-right-div {
+	margin-right: 3%;
+	margin-left: 3%;
+}
+
+#footer-nav-div li {
+	display: inline-block;
+}
+
+#footer-nav-div li a {
+	text-decoration: none;
+}
+
+#clear-btn-span a {
+	text-decoration: none;
+	color: black;
+}
+
+#nav-bar-1 {
+	position: relative;
+	top: 0px;
+	margin-top: 0px;
+	padding: none;
+}
+
+header {
+	position: relative;
+	top: 0px;
+	margin-top: 0px;
+}
+
+body {
+	position: relative;
+	top: 0px;
+	margin-top: 0px;
+	padding: none;
+}
+
+#nav-bar-1,
+#nav-bar-2 {
+	display: inline-block;
+}
+
+#nav-bar-1 {
+	margin-right: 150px;
+}
+
+#indeed-logo {
+	width: 80px;
+	position: relative;
+	top: 35px;
+}
+
+#nav-bar-1 {
+	margin-bottom: 10px;
+}
+
+#new-message-count {
+	font-size: 16px;
+	background-color: red;
+	color: white;
+}
+
+.dropbtn {
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	background-color: white;
+	padding: 16px;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 140px;
+	padding: 12px 16px;
+	border: 2px solid lightgray;
+	border-radius: 10px;
+	color: black;
+	z-index: 1;
+	margin-left: 25px;
+}
+
+.dropdown-content a {
+	display: block;
+	color: black;
+	padding: 2px;
+	text-decoration: none;
+	margin-left: 15px;
+}
+
+.show {
+	display: block;
+}
+
+body,
+header,
+nav-container {
+	margin: 0;
+}
+
+#nav-bar-2 {
+	margin-left: 360px;
+}
+
+#myDropdown {
+	margin-top: 14px;
+}
+
+.arrow-span {
+	position: relative;
+	left: 50%;
+	top: -20%;
+}
+
+.float-right a {
+	text-decoration: none;
+}
+
+.easily-apply-container {
+	display: inline-block;
+}
+
+.easily-apply-span a {
+	text-decoration: none;
+	color: red;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.heart-right {
+	color: blue;
+}
+
+.months-ago-recently-viewed a {
+	text-decoration: none;
+	color: gray;
+}
+
+.recently-viewed-heart {
+	margin-left: 100px;
+}
+
+.recently-viewed-heart a {
+	text-decoration: none;
+}
+
+.recommended-jobs-span a {
+	text-decoration: none;
+	color: gray;
+}
+
+.recommended-jobs-title {
+	text-decoration: none;
+	color: black;
+}
+
+.recommended-jobs-new-div {
+	display: inline-block;
+}
+
+.recommended-jobs-new-div .easily-apply-span {
+	color: red;
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 50px;
+}
+
+.recommended-jobs-months-ago-span {
+	margin-left: 50px;
+}
+
+.recommended-jobs-months-ago-span a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.new-span {
+	background-color: red;
+	font-size: 12px;
+}
+
+.new-span a {
+	text-decoration: none;
+	color: white;
+}
+
+.recently-viewed-card a {
+	text-decoration: none;
+	color: black;
+}
+
+.recently-viewed-card a:hover {
+	text-decoration: underline;
+}
+
+.easily-apply-span a {
+	color: red;
+}
+
+.back-icon-span {
+	position: relative;
+	top: 140px;
+}
+
+.forward-icon-span {
+	position: relative;
+	top: 140px;
+}
+
+#million-stories-span a {
+	color: blue;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#espanol-span a {
+	text-decoration: none;
+	color: blue;
+	font-weight: bold;
+}
+
+.browse-job-forward-icon-span {
+	position: relative;
+	float: right;
+}
+
+#footer-nav-div a {
+	color: gray;
+}
+
+#footer-nav-div a:hover {
+	text-decoration: underline;
+}
+
+.saved-job-card a {
+	text-decoration: none;
+	color: black;
+}
+
+.recently-viewed-card-div {
+	display: inline-block;
+}
+
+.recently-viewed-card-div-span {
+	position: relative;
+}
+
+.recently-viewed-months-ago-span {
+	margin-left: 100px;
+}
+
+.saved-jobs-months-ago-span {
+	margin-left: 100px;
+}
+
+.saved-jobs-easily-apply-span a {
+	color: red;
+	font-weight: bold;
+}
+
+#new-messages-container {
+	background-color: #f6f6f6;
+	margin-left: 7%;
+	width: 75%;
+	border-top: 3px solid red;
+}
+
+#new-messages-container h2 {
+	margin-left: 20px;
+}
+
+#new-messages-list-div {
+	display: inline-block;
+	background-color: white;
+	width: 95%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	margin-bottom: 5%;
+}
+
+#new-messages-list-div li {
+	list-style: none;
+	border-bottom: 2px lightgray;
+	height: 30px;
+	padding: 10px
+}
+
+#new-messages-number-span {
+	background-color: red;
+	color: white;
+	margin-left: 3PX;
+	font-size: 16px;
+	padding: 4px;
+}
+
+.new-messages-initials-span {
+	margin-left: 0;
+}
+
+.new-messages-grid-container {
+	display: grid;
+	grid-template-columns: 5% 10% 65% 10% 10%;
+	grid-row-gap: 1em;
+}
+
+.new-messages-date-span {
+	position: relative;
+	left: 50px;
+	color: red;
+}
+
+.new-messages-message-span {
+	margin-left: 70px;
+}
+
+.new-messages-reply-btn {
+	border-radius: 35%;
+	color: blue;
+	font-weight: bold;
+	position: relative;
+	bottom: 10px;
+	border: 2px solid gray;
+}
+
+.new-messages-logo-span {
+	background-color: orange;
+	border-radius: 65%;
+	padding: 6px;
+	text-align: center;
+	position: relative;
+	bottom: 7px;
+	color: white;
+	font-size: 12px;
+	width: 20px;
+}
+
+.up-arrow {
+	background-color: #f6f6f6;
+	border-radius: 70%;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	position: relative;
+}
+
+.down-arrow {
+	background-color: #f6f6f6;
+	border-radius: 70%;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	position: relative;
+}
+
+#recent-searches-up-down-icons-div {
+	position: relative;
+	right: 0;
+}

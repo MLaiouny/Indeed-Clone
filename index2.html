@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Indeed Clone 2</title>
+	<link rel="stylesheet" href="styles/style2.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script>
+		// When the user clicks on the button, toggle between hiding and showing the dropdown content
+		function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown menu if the user clicks outside of it
+		window.onclick = function (event) {
+			if (!event.target.matches('.dropbtn')) {
+				let dropdowns = document.getElementsByClassName("dropdown-content");
+				for (let i = 0; i < dropdowns.length; i++) {
+					let openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+					}
+				}
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+
+<!--*******************************************************************************************-->
+
+	<!--- nav Section -->
+
+		<div id="nav-container">
+			<div id="nav-bar-1">
+				<ul>
+					<li>
+						<img src="images/indeed-Logo-1.jpg" alt="indeed logo" id="indeed-logo">
+					</li>
+					<li>
+						<a href="#">Find Jobs</a>
+					</li>
+					<li>
+						<a href="#" style="color:  #5a38d6;">Company Reviews</a>
+					</li>
+					<li>
+						<a href="#">Find Salaries</a>
+					</li>
+					<li>
+						<a href="#">Find Resumes</a>
+					</li>
+					<li>
+						<a href="#" style="color:  #5a38d6">Employers/ Post Job</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="nav-bar-2">
+				<ul>
+					<li id="notificatins-li">
+						<a href="#">Notifications
+							<span>&#9679;</span>
+						</a>
+					</li>
+					<li id="messages-li">
+						<a href="#">Messages
+							<span>&#9679;</span>
+						</a>
+					</li>
+					<li>
+						<div class="dropdown">
+							<button class="dropbtn" onclick="myFunction()">
+								<b>molaiouny@gmail.com</b>
+								<span> &#9660;</span>
+							</button>
+							<div id="myDropdown" class="dropdown-content">
+								<a href="#">Resume</a>
+								<a href="#">My Jobs</a>
+								<a href="#">My Searches</a>
+								<a href="#">My Subscriptions</a>
+								<a href="#">Preferenences</a>
+								<a href="#">Account</a>
+								<hr>
+								<a href="#">Sign out</a>
+							</div>
+						</div>
+					</li>
+
+					<!-- <li id="email-li"><a href="#">molaiouny@gmail.com
+							<span>&#9662;</span></a></li> -->
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<div id="grid-container-1">
+		<div class="grid-item">
+			<p>
+				what
+				<br /> Job title, keywords, or company
+			</p>
+			<div>
+				<input type="text" class="textbox" />
+
+			</div>
+		</div>
+
+		<div class="grid-item">
+			<p>
+				Where
+				<br /> city, state or zip
+			</p>
+			<input type="text" class="textbox" placeholder="washington, DC" />
+		</div>
+
+		<div class="grid-item">
+			<button id="find-jobs-btn">Find Jobs</button>
+		</div>
+	</div>
+
+	<div id="grid-container-2">
+		<div class="grid-item" id="grid-container-2-div-1">
+			<p>
+				<b>Employers</b>
+				<br /> Find your next hire.
+				<span id="learn-more-span">Learn more</span>
+			</p>
+		</div>
+		<div>
+			<button class="grid-item" id="post-job-btn">
+				<b>Post a job</b>
+			</button>
+		</div>
+
+		<div>
+			<button class="grid-item" id="search-resumes-btn">
+				<b>Search resumes</b>
+			</button>
+		</div>
+
+		<div>
+			<span id="x-span">X</span>
+		</div>
+	</div>
+
+	<!--******************************************************************************************-->
+	<!--- New messages section-->
+
+	<div id = "new-messages-container">
+		<h2>New messages <span id = "new-messages-number-span"> 2 </span></h2>
+		<div id = "new-messages-list-div">
+			<ul>
+				<li>
+					<div class = "new-messages-grid-container">
+						<span class = "new-messages-logo-span">MK</span>
+						<span class = "new-messages-initials-span">MJ Key</span>
+						<span class = "new-messages-message-span">Action required: MJ Key is 
+							waiting for your repsonse- Reminder: this email from MJ Key <isindex>
+								awaiting your response--- Hi Mo Laiouny, I just came across your resume
+								and noticed that you
+						</span>
+						<span class = "new-messages-date-span">Dec 24</span>
+						<button class = "new-messages-reply-btn">Reply</button>
+					</div>
+				</li>
+
+				<li>
+						<div class = "new-messages-grid-container">
+							<span class = "new-messages-logo-span">MK</span>
+							<span class = "new-messages-initials-span">MJ Key</span>
+							<span class = "new-messages-message-span">Action required: MJ Key is 
+									waiting for your repsonse- Reminder: this email from MJ Key <isindex>
+										awaiting your response--- Hi Mo Laiouny, I just came across your resume
+										and noticed that you
+								</span>
+								<span class = "new-messages-date-span">Dec 24</span>
+							<button class = "new-messages-reply-btn">Reply</button>
+						</div>	
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!--************************************************************************************-->
+	<!--- Recent searches section-->
+	<div id="grid-container-4">
+		<div>
+			<span id="recent-searches-span">
+				<b>Recent searches </b>
+			</span>
+			<span id="clear-btn-span">
+				<button id="clear-btn">
+					<a href="#">clear</a>
+				</button>
+			</span>
+		</div>
+
+		<div>
+				<div = "recent-searches-up-down-icons-div">
+						<span>1-5 of 10 </span>
+						<i class = "fa fa-angle-up custom up-arrow"></i>
+						<!-- <span class = "recent-searches-up-icon">&#8963;</span> -->
+						<i class = "fa fa-angle-down custom"></i>
+						
+						<!--- <span class = "recent-searches-down-icon"> V </span> -->
+				</div>
+		</div>
+			
+	</div>
+
+	<div id="recent-searches-list-div">
+		<ul>
+			<li>
+				<a href="#">Junior web Developer
+					<br />
+					<span class="recent-searches-new-count">39 new </span>in washington, DC
+				</a>
+			</li>
+
+			<li>
+				<a href="#">Junior web Developer
+					<br />
+					<span class="recent-searches-new-count">39 new </span>in washington,DC
+				</a>
+			</li>
+			<li>
+				<a href="#">Junior web Developer
+					<br />
+					<span class="recent-searches-new-count">39 new </span>in washington,DC
+				</a>
+			</li>
+
+			<li>
+				<a href="#">Junior web Developer
+					<br />
+					<span class="recent-searches-new-count">39 new </span>in washington,DC
+				</a>
+			</li>
+
+			<li>
+				<a href="#">Junior web Developer
+					<br />
+					<span class="recent-searches-new-count">39 new </span>in washington,DC
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<!--***********************************************************************************-->
+	<!--- Saved Jobs Section -->
+
+	<div id="saved-jobs-div">
+		<h2>Saved jobs</h2>
+		<div id="saved-jobs-list">
+			<div class="saved-job-card">
+				<p>
+					<a href = "#"><b>Junior Web Developer</b>
+						<span class="heart-right">&hearts;</span>
+					</a>
+					<br /> Dayton, OH 45430
+					<br />
+					<span class="fa fa-star checked" style="color: orange"></span>
+					3.2 </span>
+					<span>Reynolds and Reynolds</span>
+					<br />
+
+					<div class = "easily-apply-container">
+							<span class = "saved-jobs-easily-apply-span">
+								<a href = "#">Easily Apply</a>
+							</span>
+	
+							<span class="saved-jobs-months-ago-span">
+								<a href = "#">5 months ago</a>
+	
+							</span>
+					</div>
+					
+				</p>
+				<hr />
+
+				<p>JOB INFO</p>
+				<p>
+					Our software and systems eingineering teams are engaged in supporting various DoD simulation and training systems
+				</p>
+			</div>
+
+			<div class="saved-job-card">
+				<p>
+					<a href = "#"><b>Junior Web Developer</b></a>
+					<span class="heart-right">&hearts;</span>
+					<br /> Dayton, OH 45430
+					<br />
+
+
+					<span class="fa fa-star checked" style="color: orange"></span> 3.2 </span>
+					<span>Reynolds and Reynolds</span>
+					<br />
+					<div class = "easily-apply-container">
+							<span class = "saved-jobs-easily-apply-span">
+									<a href = "#">Easily Apply</a>
+								</span>
+		
+								<span class="saved-jobs-months-ago-span">
+									<a href = "#">5 months ago</a>
+		
+								</span>
+					</div>
+				</p>
+				<hr />
+
+				<p>JOB INFO</p>
+				<p>
+					Our software and systems eingineering teams are engaged in supporting various DoD simulation and training systems
+				</p>
+			</div>
+
+			<div class="saved-job-card">
+				<p>
+					<a href = "#"><b>Junior Web Developer</b></a>
+					<span class="heart-right">&hearts;</span>
+					<br /> Dayton, OH 45430
+					<br />
+					<span class="fa fa-star checked" style="color: orange"></span>
+					<span> 3.2 </span>
+					<span>Reynolds and Reynolds</span>
+					<br />
+					<div class = "easily-apply-container">
+							<span class = "saved-jobs-easily-apply-span">
+									<a href = "#">Easily Apply</a>
+								</span>
+		
+								<span class="saved-jobs-months-ago-span">
+									<a href = "#">5 months ago</a>
+		
+								</span>
+						</div>
+				</p>
+				<hr />
+
+				<p>JOB INFO</p>
+				<p>
+					Our software and systems eingineering teams are engaged in supporting various DoD simulation and training systems
+				</p>
+			</div>
+
+			<div class="saved-job-card">
+				<p>
+					<a href = "#"><b>Junior Web Developer</b></a>
+					<span class="heart-right">&hearts;</span>
+					<br /> Dayton, OH 45430
+					<br />
+					<span class="fa fa-star checked" style="color: orange"></span>
+					<span> 3.2 </span>
+					<span>Reynolds and Reynolds</span>
+					<br />
+					<div class = "easily-apply-container">
+							<span class = "saved-jobs-easily-apply-span">
+									<a href = "#">Easily Apply</a>
+								</span>
+		
+								<span class="saved-jobs-months-ago-span">
+									<a href = "#">5 months ago</a>
+		
+								</span>
+						</div>
+				</p>
+				<hr />
+
+				<p>JOB INFO</p>
+				<p>
+					Our software and systems eingineering teams are engaged in supporting various DoD simulation and training systems
+				</p>
+			</div>
+
+			<div class="saved-job-card">
+				<p>
+					<b>Junior Web Developer</b>
+					<span class="heart-right">&hearts;</span>
+					<br /> Dayton, OH 45430
+					<br />
+					<span class="fa fa-star checked" style="color: orange"></span>
+					<span>3.2 </span>
+					<span>Reynolds and Reynolds</span>
+					<br />
+					<div class = "easily-apply-container">
+							<span class = "saved-jobs-easily-apply-span">
+									<a href = "#">Easily Apply</a>
+								</span>
+		
+								<span class="saved-jobs-months-ago-span">
+									<a href = "#">5 months ago</a>
+		
+								</span>
+						</div>
+				</p>
+				<hr />
+
+				<p>JOB INFO</p>
+				<p>
+					Our software and systems eingineering teams are engaged in supporting various DoD simulation and training systems
+				</p>
+			</div>
+
+			<div class="saved-job-card">
+				<p>
+					<b>Junior Web Developer</b>
+					<span class="heart-right">&hearts;</span>
+					<br /> Dayton, OH 45430
+
+					<br />
+					<span class="fa fa-star checked" style="color: orange"></span>
+					<span>3.2 </span>
+					<span>Reynolds and Reynolds</span>
+					<br />
+					<div class = "easily-apply-container">
+							<span class = "saved-jobs-easily-apply-span">
+									<a href = "#">Easily Apply</a>
+								</span>
+		
+								<span class="saved-jobs-months-ago-span">
+									<a href = "#">5 months ago</a>
+		
+								</span>
+						</div>
+				</p>
+				<hr />
+
+				<p>JOB INFO</p>
+				<p>
+					Our software and systems eingineering teams are engaged in supporting various DoD simulation and training systems
+				</p>
+			</div>
+
+			<div class="saved-job-card">
+				<p>
+					<b>Junior Web Developer</b>
+					<span class="heart-right">&hearts;</span>
+					<br /> Dayton, OH 45430
+					<br />
+					<span class="fa fa-star checked" style="color: orange"></span>
+					<span>3.2 </span>
+					<span>Reynolds and Reynolds</span>
+					<br />
+					<div class = "easily-apply-container">
+							<span class = "saved-jobs-easily-apply-span">
+									<a href = "#">Easily Apply</a>
+								</span>
+		
+								<span class="saved-jobs-months-ago-span">
+									<a href = "#">5 months ago</a>
+		
+								</span>
+						</div>
+				</p>
+				<hr />
+
+				<p>JOB INFO</p>
+				<p>
+					Our software and systems eingineering teams are engaged in supporting various DoD simulation and training systems
+				</p>
+			</div>
+
+			<div class="saved-job-card">
+				<p>
+					<b>Junior Web Developer</b>
+					<span class="heart-right">&hearts;</span>
+					<br /> Dayton, OH 45430
+					<br />
+					<span class="fa fa-star checked" style="color: orange"></span>
+					<span>3.2 </span>
+					<span>Reynolds and Reynolds</span>
+					<br />
+					<div class = "easily-apply-container">
+							<span class = "saved-jobs-easily-apply-span">
+									<a href = "#">Easily Apply</a>
+								</span>
+		
+								<span class="saved-jobs-months-ago-span">
+									<a href = "#">5 months ago</a>
+		
+								</span>
+					</div>
+				</p>
+				<hr />
+
+				<p>JOB INFO</p>
+				<p>
+					Our software and systems eingineering teams are engaged in supporting various DoD simulation and training systems
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!--*****************************************************************************************************-->
+	<!-- Recently viewed Section-->
+	<div id="recently-viewed-conatiner">
+		<p id="recently-viewed-p">
+			<b>Recently viewed</b>
+		</p>
+		<div id="recently-viewed-list">
+			<div class="recently-viewed-card">
+				<p>
+					<a href = "#"><b>Junior Web Developer</b></a>
+					<span class = "recently-viewed-heart">
+						<a href = "#">&#x2661;</a>
+
+					</span>
+					<br /> Dayton, OH 45430
+					<br />
+					<span class="fa fa-star checked" style="color: orange"></span>
+					<span>3.2 </span>
+					<span>Reynolds and Reynolds</span>
+					<br />
+					<div class = "easily-apply-container">
+							<span class = "easily-apply-span">
+								<a href = "#">Easily Apply</a>
+							</span>
+	
+							<span class="recently-viewed-months-ago-span">
+								<a href = "#">5 months ago</a>
+	
+							</span>
+					</div>
+				</p>
+				<hr />
+
+				<p>JOB INFO</p>
+				<p>
+					Our software and systems eingineering teams are engaged in supporting various DoD simulation and training systems
+				</p>
+			</div>
+
+			<div class="recently-viewed-card">
+				<p>
+					<a href = "#"><b>Junior Web Developer</b></a>
+					<span class = "recently-viewed-heart">
+							<a href = "#">&#x2661;</a>
+	
+					</span>
+					<br /> Dayton, OH 45430
+					<br />
+					<span class="fa fa-star checked" style="color: orange"></span>
+					<span>3.2 </span>
+					<span>Reynolds and Reynolds</span>
+					<br />
+					<div class = "easily-apply-container">
+							<span class = "easily-apply-span">
+								<a href = "#">Easily Apply</a>
+							</span>
+	
+							<span class="recently-viewed-months-ago-span">
+								<a href = "#">5 months ago</a>
+	
+							</span>
+					</div>
+				</p>
+				<hr />
+
+				<p>JOB INFO</p>
+				<p>
+					Our software and systems eingineering teams are engaged in supporting various DoD simulation and training systems
+				</p>
+			</div>
+
+			<div class="recently-viewed-card">
+				<p>
+					<a href = "#"><b>Junior Web Developer</b></a>
+					<span class = "recently-viewed-heart">
+						<a href = "#">&#x2661;</a>
+	
+					</span>
+					<br /> Dayton, OH 45430
+					<br />
+					<span class="fa fa-star checked" style="color: orange"></span>
+					<span>3.2 </span>
+					<span>Reynolds and Reynolds</span>
+					<br />
+					<div class = "easily-apply-container">
+							<span class = "easily-apply-span">
+								<a href = "#">Easily Apply</a>
+							</span>
+	
+							<span class="recently-viewed-months-ago-span">
+								<a href = "#">5 months ago</a>
+	
+							</span>
+					</div>
+				</p>
+				<hr />
+
+				<p>JOB INFO</p>
+				<p>
+					Our software and systems eingineering teams are engaged in supporting various DoD simulation and training systems
+				</p>
+			</div>
+
+			<div class="recently-viewed-card">
+				<p>
+					<a href = "#"><b>Junior Web Developer</b></a>
+					<span class = "recently-viewed-heart">
+						<a href = "#">&#x2661;</a>
+	
+					</span>
+					<br /> Dayton, OH 45430
+					<br />
+					<span class="fa fa-star checked" style="color: orange"></span>
+					<span>3.2 </span>
+					<span>Reynolds and Reynolds</span>
+					<br />
+					<div class = "recently-viewed-card-div">
+							<div class = "easily-apply-container">
+								<span class = "easily-apply-span">
+									<a href = "#">Easily Apply</a>
+								</span>
+			
+								<span class="recently-viewed-months-ago-span">
+									<a href = "#">5 months ago</a>
+			
+								</span>
+							</div>		
+					</div>
+				</p>
+				<hr />
+
+				<p>JOB INFO</p>
+				<p>
+					Our software and systems eingineering teams are engaged in supporting various DoD simulation and training systems
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!--******************************************************************************************-->
+	<!-- Recommended Jobs Section-->
+
+	<div id="recommended-jobs-container">
+		<p id="recommended-jobs-p">
+			<b>Recommended jobs</b>
+		</p>
+		
+		<div id="recommended-jobs-list">
+				<span class = "back-icon-span">
+						<img src="https://img.icons8.com/material/30/000000/back.png">
+				</span>
+			<div class="recommended-job-card">
+				<p>
+					<a href = "#" class = "recommended-jobs-title"><b>Junior Web Developer</b></a>
+					<span class = "recently-viewed-heart">
+						<a href = "#">&#x2661;</a>
+	
+					</span>
+					<br /> Dayton, OH 45430
+					<br />
+					<span>3.2 </span>
+					<span>Reynolds and Reynolds</span>
+					<br />
+					<div class = "recommended-jobs-new-div">
+						<span class = "new-span">
+							<a href = "#">NEW</a>
+							
+						</span>
+						<span class = "easily-apply-span">
+							<a href = "#">Easily Apply</a>
+						</span>
+						<span class="recommended-jobs-months-ago-span">
+								<a href = "#">2 days ago</a>
+						</span>
+
+					</div>
+				</p>
+				<hr />
+
+				<p>JOB INFO</p>
+				<p>
+					Our software and systems eingineering teams are engaged in supporting various DoD simulation and training systems
+				</p>
+			</div>
+
+			<div class="recommended-job-card">
+				<p>
+					<a href = "#" class = "recommended-jobs-title"><b>Junior Web Developer</b></a>
+					<span class = "recently-viewed-heart">
+						<a href = "#">&#x2661;</a>
+	
+					</span>
+					<br /> Dayton, OH 45430
+					<br />
+					<span>3.2 </span>
+					<span>Reynolds and Reynolds</span>
+					<br />
+					<div class = "recommended-jobs-new-div">
+							<span class = "new-span">
+								<a href = "#">NEW</a>
+								
+							</span>
+							<span class = "easily-apply-span">
+								<a href = "#">Easily Apply</a>
+							</span>
+							<span class="recommended-jobs-months-ago-span">
+									<a href = "#">5 days ago</a>
+								</span>
+	
+					</div>
+				</p>
+				<hr />
+
+				<p>JOB INFO</p>
+				<p>
+					Our software and systems eingineering teams are engaged in supporting various DoD simulation and training systems
+				</p>
+			</div>
+
+			<div class="recommended-job-card">
+				<p>
+					<a href = "#" class = "recommended-jobs-title"><b>Junior Web Developer</b></a>
+					<span class = "recently-viewed-heart">
+						<a href = "#">&#x2661;</a>
+	
+					</span>
+					<br /> Dayton, OH 45430
+					<br />
+					<span>3.2 </span>
+					<span>Reynolds and Reynolds</span>
+					<br />
+					<div class = "recommended-jobs-new-div">
+							<span class = "new-span">
+								<a href = "#">NEW</a>
+								
+							</span>
+							<span class = "easily-apply-span">
+								<a href = "#">Easily Apply</a>
+							</span>
+							<span class="recommended-jobs-months-ago-span">
+									<a href = "#">10 days ago</a>
+								</span>
+	
+						</div>
+				</p>
+				<hr />
+
+				<p>JOB INFO</p>
+				<p>
+					Our software and systems eingineering teams are engaged in supporting various DoD simulation and training systems
+				</p>
+			</div>
+
+			<div class="recommended-job-card">
+				<p>
+					<a href = "#" class = "recommended-jobs-title"><b>Junior Web Developer</b></a>
+					<span class = "recently-viewed-heart">
+						<a href = "#">&#x2661;</a>
+	
+					</span>
+					<br /> Dayton, OH 45430
+					<br />
+					<span>3.2 </span>
+					<span>Reynolds and Reynolds</span>
+					<br />
+					<div class = "recommended-jobs-new-div">
+							<span class = "new-span">
+								<a href = "#">NEW</a>
+								
+							</span>
+							<span class = "easily-apply-span">
+								<a href = "#">Easily Apply</a>
+							</span>
+							<span class="recommended-jobs-months-ago-span">
+									<a href = "#">13 days ago</a>
+								</span>
+	
+					</div>
+				</p>
+				<hr />
+
+				<p>JOB INFO</p>
+				<p>
+					Our software and systems eingineering teams are engaged in supporting various DoD simulation and training systems
+				</p>
+			</div>
+			<span class = "forward-icon-span">
+					<img src="https://img.icons8.com/ios/30/000000/more-than-filled.png">
+			</span>
+		</div>
+		
+	</div>
+
+	<!--********************************************************************************************-->
+	<!--Bowse Job Categories-->
+
+	<div id="browse-job-categories-container">
+		<h2>Browse job categories</h2>
+		<div id="browse-job-categories-list">
+			<div class="browse-job-categories-card">
+				<a href="#"><b>Administrative &
+					<br /> Customer Support</b>
+				</a>
+				<span class = "browse-job-forward-icon-span">
+						<img src="https://img.icons8.com/ios/30/000000/more-than-filled.png">
+				</span>
+
+			</div>
+			
+
+			<div class="browse-job-categories-card">
+				<a href="#"><b>Business Operations &
+					<br /> Management</b>
+				</a>
+
+				<span class = "browse-job-forward-icon-span">
+						<img src="https://img.icons8.com/ios/30/000000/more-than-filled.png">
+				</span>
+
+			</div>
+
+			<div class="browse-job-categories-card">
+				<a href="#"><b>Community & human
+					<br /> Services</b>
+				</a>
+				<span class = "browse-job-forward-icon-span">
+						<img src="https://img.icons8.com/ios/30/000000/more-than-filled.png">
+				</span>
+			</div>
+
+			<div class="browse-job-categories-card">
+				<a href="#"><b>Finance & Accounting </b></a>
+				<span class = "browse-job-forward-icon-span">
+						<img src="https://img.icons8.com/ios/30/000000/more-than-filled.png">
+				</span>
+			</div>
+
+			<div class="browse-job-categories-card">
+				<a href="#"><b>Finance & Accounting </b></a>
+				<span class = "browse-job-forward-icon-span">
+						<img src="https://img.icons8.com/ios/30/000000/more-than-filled.png">
+				</span>
+			</div>
+			<div class="browse-job-categories-card">
+				<a href="#"><b>Architecture &
+					<br /> Engineering</b>
+				</a>
+				<span class = "browse-job-forward-icon-span">
+						<img src="https://img.icons8.com/ios/30/000000/more-than-filled.png">
+				</span>
+			</div>
+			<div class="browse-job-categories-card">
+				<a href="#"><b>Finance & Accounting </b></a>
+				<span class = "browse-job-forward-icon-span">
+						<img src="https://img.icons8.com/ios/30/000000/more-than-filled.png">
+				</span>
+			</div>
+
+			<div class="browse-job-categories-card">
+				<a href="#"><b>Finance & Accounting</b> </a>
+				<span class = "browse-job-forward-icon-span">
+						<img src="https://img.icons8.com/ios/30/000000/more-than-filled.png">
+				</span>
+			</div>
+
+			<div class="browse-job-categories-card">
+				<a href="#"><b>Business Operations &
+					<br /> Management</b>
+				</a>
+
+				<span class = "browse-job-forward-icon-span">
+						<img src="https://img.icons8.com/ios/30/000000/more-than-filled.png">
+				</span>
+
+			</div>
+
+			<div class="browse-job-categories-card">
+				<a href="#"><b>Finance & Accounting</b> </a>
+				<span class = "browse-job-forward-icon-span">
+						<img src="https://img.icons8.com/ios/30/000000/more-than-filled.png">
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<!--End of Section************************************************************************************-->
+
+	<!--Footer Section -->
+
+	<div id="footer-div">
+		<p id="footer-p">
+			indeed helps people get jobs:
+			<span id="million-stories-span">
+				<a href = "#">Over 10 million stories shared</a>
+
+			</span>
+		</p>
+		<p id="footer-p-spanish">
+			Indeed también está disponible en
+			<span id="espanol-span">
+				<a href = "#">español</a>
+
+			</span>
+		</p>
+	</div>
+
+	<div id="footer-nav-and-copy-right-div">
+		<div id="footer-nav-div">
+			<ul>
+				<li>
+					<a href="#">Hiring Lab -</a>
+				</li>
+				<li>
+					<a href="#">Career Advice -</a>
+				</li>
+				<li>
+					<a href="#">Browse Jobs -</a>
+				</li>
+				<li>
+					<a href="#">Browse Companies -</a>
+				</li>
+				<li>
+					<a href="#">Salaries -</a>
+				</li>
+				<li>
+					<a href="#">Employer Events -</a>
+				</li>
+				<li>
+					<a href="#">work at Indeed -</a>
+				</li>
+				<li>
+					<a href="#">Countries -</a>
+				</li>
+				<li>
+					<a href="#">About -</a>
+				</li>
+				<li>
+					<a href="#">Help Center -</a>
+				</li>
+			</ul>
+		</div>
+
+		<div id="copy-right-div">
+			<p>
+				<small>&copy 2018 - Cookies, Privacy and Terms</small>
+			</p>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
